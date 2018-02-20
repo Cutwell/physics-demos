@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Black Holes</title>
+        <link rel=stylesheet href=style.css>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src=color.js></script>
+        <script src=code.js></script>
+    </head>
+    <body>
+        <div class=left>
+            <div class=container>
+                &#9432; <span id=info>1e+10 ≡ 1x10<sup>10</sup></span>
+            </div>
+            <div class=container>
+                c = speed of light = <span id=SOL>0</span>ms<sup>-1</sup>
+            </div>
+            <div class=container>
+                <img src=equations/escapevelocity.png><br/>
+            </div>
+            <div id=constant class=container>
+                G = Gravitational constant = 6.67x10<sup>-11</sup>Nm<sup>2</sup>kg<sup>-2</sup>
+            </div>
+            <div id=mass class=container>
+                M = <input class=slider id=mass-slider type="range" min="1" max="200" value="50">
+                <p class=value> <span id=mass-value>50</span> Solar Masses (1 M = 2×10<sup>30</sup>kg)</p>
+                <br/>
+            </div>
+            <div id=radius class=container>
+                R = <input class=slider id=radius-slider type="range" min="1" max="200" value="50">
+                <p class=value> <span id=radius-value>50</span> Solar Radii (1 R = 6.597x10<sup>8</sup>m)</p>
+                <br/>
+            </div>
+            <div class=container>
+                <p>∴ V = <span id=velocity-value>0</span>ms<sup>-1</sup></p>
+                <br/>
+            </div>
+
+            <div class=container>
+                <img src=equations/schwarzschild.png><br/>
+            </div>
+            <div class=container>
+                <p>∴ R = <span id=schwarzschild-value>0</span>m</p>
+                <br/>
+            </div>
+
+            <div class=container>
+                <button onclick="collapseStar()">Collapse Star</button>
+                <button onclick="location.reload()">Reset</button>
+            </div>
+
+        </div>
+        <div class=right>
+            <div class=centre id=sun>
+            </div>
+        </div>
+    </body>
+</html>
