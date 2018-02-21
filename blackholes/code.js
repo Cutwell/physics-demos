@@ -25,6 +25,9 @@ $(document).ready(function() {
         $("#sun").height(split[1]*2);
         $("#sun").width(split[1]*2);
 
+        massSlider.value = split[0];
+        radiusSlider.value = split[1];
+
         massOutput.innerHTML = split[0];
         var color = approximateColor1ToColor2ByPercent('#fcd440', '#ff6600', split[0]/200);
         $("#sun").css("background-color", color);
@@ -33,6 +36,7 @@ $(document).ready(function() {
     }
 
     radiusSlider.oninput = function() {
+        $('#select').val("custom");
         radiusOutput.innerHTML = this.value;
         $("#sun").height(this.value*2);
         $("#sun").width(this.value*2);
@@ -40,6 +44,7 @@ $(document).ready(function() {
     }
 
     massSlider.oninput = function() {
+        $('#select').val("custom");
         massOutput.innerHTML = this.value;
         var color = approximateColor1ToColor2ByPercent('#fcd440', '#ff6600', this.value/200);
         $("#sun").css("background-color", color);
