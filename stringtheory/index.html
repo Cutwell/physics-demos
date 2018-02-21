@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>String Theory</title>
+        <link rel=stylesheet href=style.css>
+        <link rel=icon type=image/png href=favicon.png />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src=code.js></script>
+    </head>
+    <body>
+        <div class=container>
+            &#9432; <span id=info>Inverting the wave produces a cosine wave.</span><br/><br/>
+            Amplitude = <input class=slider id=amp-slider type="range" min="0" max="200" value="50">
+            <p class=value> <span id=amp-value>50</span></p>
+            <br/>
+        </div>
+        <div class=container>
+            Frequency = <input class=slider id=freq-slider type="range" min="1" max="1000" value="50">
+            <p class=value> <span id=freq-value>5</span></p>
+            <br/>
+        </div>
+        <div class=container>
+            Invert = <input type="checkbox" id="invert">
+            <p class=value> <span id=invert-value>false</span></p>
+        </div>
+        
+        <canvas id=canvas class=center></canvas>
+    </body>
+</html>

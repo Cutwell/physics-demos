@@ -12,6 +12,26 @@ $(document).ready(function() {
     var massOutput = document.getElementById("mass-value");
     massOutput.innerHTML = massSlider.value;
 
+    var starSelect = document.getElementById("select");
+
+    starSelect.oninput = function() {
+
+        if (this.value == "custom") {
+            var split = [50, 50];
+        } else {
+            var split = this.value.split("-");
+        }
+        radiusOutput.innerHTML = split[1];
+        $("#sun").height(split[1]*2);
+        $("#sun").width(split[1]*2);
+
+        massOutput.innerHTML = split[0];
+        var color = approximateColor1ToColor2ByPercent('#fcd440', '#ff6600', split[0]/200);
+        $("#sun").css("background-color", color);
+
+        escapeVelocity(massSlider.value, radiusSlider.value);
+    }
+
     radiusSlider.oninput = function() {
         radiusOutput.innerHTML = this.value;
         $("#sun").height(this.value*2);
@@ -66,7 +86,7 @@ function collapseStar() {
 function escapeVelocity(mass_value, radius_value) {
     
     var radius = radius_value * (6.597 * Math.pow(10, 8));
-    var mass = mass_value * (2 * Math.pow(10, 30));
+    var mass = mass_value * (1.989 * Math.pow(10, 30));
 
     var division = (2*mass*gravity)/radius;
     var root = Math.sqrt(division);
