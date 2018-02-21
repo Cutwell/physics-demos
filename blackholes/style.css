@@ -7,12 +7,14 @@ html, body {
 .left {
     padding: 2em;
     position: absolute;
+    top: 0;
     left: 0;
     width: 50%;
     height: 100%;
 }
 .right {
     position: absolute;
+    top: 0;
     right: 0;
     width: 50%;
     height: 100%;

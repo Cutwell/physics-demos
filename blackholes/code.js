@@ -56,7 +56,7 @@ $(document).ready(function() {
 
 function collapseStar() {
 
-    $("#info").html("&#10687; = photon sphere (outer) and event horizon (inner).");
+    $("#info").html("&#8226; = Schwarzschild radius (not to scale).");
 
     $("#constant").hide();
     $("#radius").hide();
@@ -78,13 +78,13 @@ function collapseStar() {
 
     escapeVelocity(mass, radius);
 
+    var schwarzschild_radius = (division/(6.597*Math.pow(10, 8)))*2;
+
     $("#sun").css("background-color", "#fff");
     $("#sun").animate({
         height: "2px",
         width: "2px",
     }, 1000, function() {
-        // add photon sphere
-        $("#sun").css("border-style", "double");
     });
 }
 
