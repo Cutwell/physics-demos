@@ -24,7 +24,6 @@ A 'rule' of the universe is called a force, and there are four known forces.
 
 Bosons carrys information 'connecting' matter particles and giving them mass and charge.
 
-
 Quarks exchange strong nuclear force bosons, communicating the strong nuclear attraction to each other.
 Electrons exchange with the protons formed from these quarks using particles of electromagnetism, photons.
 Therefore quarks become 'trapped' and form protons, while electrons orbit due to the force of attraction, bulding atoms (in this case a hydrogen atom).
