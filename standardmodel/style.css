@@ -23,16 +23,16 @@ input:focus {
 
 .proton {
     background-color: #e6e6e6;
-    height: 100px;
-    width: 100px;
+    height: 5em;
+    width: 5em;
     border-radius: 50%;
 }
 .electron {
-    margin: 150px;
+    margin: 7em;
     position: absolute;
     background-color: #ffff00;
-    height: 20px;
-    width: 20px;
+    height: 1em;
+    width: 1em;
     border-radius: 50%;
     
 }

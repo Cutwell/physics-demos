@@ -6,6 +6,7 @@ html, body {
     font-family: 'Courier New', Courier, monospace;
 }
 #canvas {
+    padding: 2em;
     width: 400px;
     height: 250px;
     background-color: #505050;
