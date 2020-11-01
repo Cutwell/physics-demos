@@ -9,18 +9,17 @@
             <div class="container title">
                 <span>(!) Physics Web Applets</span>
             </div>
+
             <div class=container>
-                <button onclick="window.location.href=blackholes;">Blackhole Model</button><br>
-                <iframe scrolling="no" id="preview-blackholes" class="preview" src="/blackholes#sun"></iframe>
+                <button onmouseover="document.getElementById('preview').src=blackholes;" onclick="window.location.href=blackholes;">Blackhole Model</button><br>
+                <button onmouseover="document.getElementById('preview').src=standardmodel;" onclick="window.location.href=standardmodel;">Standard Model</button><br>
+                <button onmouseover="document.getElementById('preview').src=stringtheory;" onclick="window.location.href=stringtheory;">String Theory Model</button><br>
             </div>
-            <div class=container>
-                <button onclick="window.location.href=standardmodel;">The Standard Model</button><br>
-                <iframe scrolling="no" id="preview-standardmodel" class="preview" src="/standardmodel#animation"></iframe>
-            </div>
-            <div class=container>
-                <button onclick="window.location.href=stringtheory;">String Theory Model</button><br>
-                <iframe scrolling="no" id="preview-stringtheory" class="preview" src="/stringtheory#canvas"></iframe>
-            </div>
+        </div>
+
+        <div class=right>
+            <iframe scrolling="no" id="preview" class="preview"></iframe>
+        </div>
     </body>
 
     <script>
@@ -28,8 +27,6 @@
         var standardmodel = window.location.href + '/standardmodel';
         var stringtheory = window.location.href + '/stringtheory';
 
-        document.getElementById("preview-blackholes").src = blackholes + '#sun';
-        document.getElementById("preview-standardmodel").src = standardmodel + '#animation';
-        document.getElementById("preview-stringtheory").src = stringtheory + '#canvas';
+        document.getElementById("preview").src = blackholes;
     </script>
 </html>

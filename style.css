@@ -19,10 +19,16 @@ a {
     width: 50%;
     height: 100%;
 }
+.right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 .container {
     margin: 1em;
 }
 button {
+    font-family: 'Courier New', Courier, monospace;
     background-color: #555555;
     border: none;
     color: #fff;
@@ -31,6 +37,8 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    width: 200px;
+    margin:0.2em;
 }
 button:hover {
     background-color: #e7e7e7;
@@ -59,6 +67,7 @@ select {
     width: 300px;
 }
 .preview {
-    height: 200px;
-    width: 500px;
+    height: 400px;
+    width: 700px;
+    margin: 4em;
 }
