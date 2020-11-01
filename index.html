@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Physics Demos</title>
+        <link rel=stylesheet href=style.css>
+        <link rel=icon type=image/png href=favicon.png />
+    </head>
+    <body>
+        <div class=left>
+            <div class="container title">
+                <span>(!) Physics Web Applets</span>
+            </div>
+            <div class=container>
+                <button onclick="window.location.href=blackholes;">Blackhole Model</button><br>
+                <iframe id="preview-blackholes" class="preview" src="/blackholes"></iframe>
+            </div>
+            <div class=container>
+                <button onclick="window.location.href=standardmodel;">The Standard Model</button><br>
+                <iframe id="preview-standardmodel" class="preview" src="/standardmodel"></iframe>
+            </div>
+            <div class=container>
+                <button onclick="window.location.href=stringtheory;">String Theory Model</button><br>
+                <iframe id="preview-stringtheory" class="preview" src="/stringtheory"></iframe>
+            </div>
+    </body>
+
+    <script>
+        var blackholes = window.location.hostname + '/blackholes';
+        var standardmodel = window.location.hostname + '/standardmodel';
+        var stringtheory = window.location.hostname + '/stringtheory';
+
+        document.getElementById("preview-blackholes").src = blackholes;
+        document.getElementById("preview-standardmodel").src = standardmodel;
+        document.getElementById("preview-stringtheory").src = stringtheory;
+    </script>
+</html>

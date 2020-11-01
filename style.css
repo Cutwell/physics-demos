@@ -1,0 +1,64 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
+}
+a {
+    color: blue;
+    text-decoration: underline;
+}
+.title {
+    font-size: 1.5em;
+}
+.left {
+    padding: 2em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+}
+.container {
+    margin: 1em;
+}
+button {
+    background-color: #555555;
+    border: none;
+    color: #fff;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #e7e7e7;
+    color: #000;
+}
+
+button:focus, input:focus, select:focus {
+    outline: none;
+}
+select {
+    -webkit-appearance: button;
+    -webkit-border-radius: 2px;
+    -webkit-padding-end: 20px;
+    -webkit-padding-start: 2px;
+    -webkit-user-select: none;
+    background-image: url(arrow.png), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+    background-position: 97% center;
+    background-repeat: no-repeat;
+    color: #555555;
+    font-size: inherit;
+    margin: 20px;
+    overflow: hidden;
+    padding: 10px 16px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 300px;
+}
+.preview {
+    height: 200px;
+    width: 300px;
+}
